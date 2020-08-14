@@ -11,7 +11,7 @@ swagger:
 spring:
   data:
     mongodb:
-      host: localhost
+      host: db
       port: 27017
       database: avaliacao-api
 management:

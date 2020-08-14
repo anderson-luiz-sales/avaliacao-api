@@ -8,3 +8,18 @@ swagger:
     description: API responsável por gerenciar crud de cursos.
   base:
     package: br.com.cast.avaliacao
+spring:
+  data:
+    mongodb:
+      host: db
+      port: 27017
+      database: avaliacao-api
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      base-path: null
+      path-mapping:
+        health: /healthcheck

@@ -1,0 +1,10 @@
+swagger:
+  contact:
+    name: Anderson Sales
+    email: anderson.luiz.sales@gmail.com
+  app:
+    name: Avaliação API
+    version: 0.0.1
+    description: API responsável por gerenciar crud de cursos.
+  base:
+    package: br.com.cast.avaliacao

@@ -42,7 +42,7 @@ http://localhost:8080/swagger-ui.html#/
 
 ## Scripts de Inserts:
 
-##Primeiro Scripts na coleção course
+Primeiro Scripts na coleção course
 ```
 {
   "category": [
@@ -63,7 +63,7 @@ http://localhost:8080/swagger-ui.html#/
 }
 ```
 
-##Segundo Scripts na coleção course
+Segundo Scripts na coleção course
 ```
 {
   "category": [
@@ -80,7 +80,7 @@ http://localhost:8080/swagger-ui.html#/
 }
 ```
 
-##Terceiro Scripts na coleção course
+Terceiro Scripts na coleção course
  ```
 {
   "category": [

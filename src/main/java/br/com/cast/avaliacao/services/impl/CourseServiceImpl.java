@@ -1,6 +1,7 @@
 package br.com.cast.avaliacao.services.impl;
 
 import br.com.cast.avaliacao.entities.Course;
+import br.com.cast.avaliacao.exceptions.NotFoundException;
 import br.com.cast.avaliacao.repositories.CourseRepository;
 import br.com.cast.avaliacao.services.CourseService;
 import lombok.AllArgsConstructor;
@@ -32,6 +33,10 @@ public class CourseServiceImpl implements CourseService {
     @Override
     public Course findById(String id) {
         log.info("[CourseServiceImpl.findById] - id: {}");
+
+        if(courseRepository.findByid(id) == null) {
+            throw new NotFoundException("Not found for id:" + id);
+        }
         return courseRepository.findByid(id);
     }
 

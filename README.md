@@ -44,55 +44,60 @@ http://localhost:8080/swagger-ui.html#/
 
 Primeiro Scripts na coleção course
 ```
-{
-  "category": [
-    {
-      "description": "Comportamental",
-      "id": "1"
-    },
-    {
-      "description": "Qualidade",
-      "id": "2"
+  {
+    "id": "1",
+    "subjectDescription": "Curso de comportamento empresarial",
+    "startDate": "2020-08-25T00:00:00.000+00:00",
+    "endDate": "2020-08-20T00:00:00.000+00:00",
+    "studentQuantity": 40,
+    "category": {
+      "id": "1",
+      "description": "Comportamental"
     }
-  ],
-  "endDate": "2020-09-19",
-  "id": "1",
-  "startDate": "2020-09-16",
-  "studentQuantity": 4,
-  "subjectDescription": "Curso de relação comportamental e qualidade"
-}
+  }
 ```
 
 Segundo Scripts na coleção course
 ```
-{
-  "category": [
-    {
-      "description": "Processos",
-      "id": "4"
+  {
+    "id": "2",
+    "subjectDescription": "Curso de qualidade",
+    "startDate": "2020-09-01T00:00:00.000+00:00",
+    "endDate": "2020-09-05T00:00:00.000+00:00",
+    "studentQuantity": 70,
+    "category": {
+      "id": "3",
+      "description": "Qualidade"
     }
-  ],
-  "endDate": "2020-09-20",
-  "id": "2",
-  "startDate": "2020-09-19",
-  "studentQuantity": 40,
-  "subjectDescription": "Curso de processos"
-}
+  }
 ```
 
 Terceiro Scripts na coleção course
  ```
-{
-  "category": [
-    {
-      "description": "Programação",
-      "id": "2"
+  {
+    "id": "3",
+    "subjectDescription": "Curso de qualidade",
+    "startDate": "2020-09-10T00:00:00.000+00:00",
+    "endDate": "2020-09-15T00:00:00.000+00:00",
+    "studentQuantity": 5,
+    "category": {
+      "id": "2",
+      "description": "Programação"
     }
-  ],
-  "endDate": "2020-10-15",
-  "id": "3",
-  "startDate": "2020-09-20",
-  "studentQuantity": 60,
-  "subjectDescription": "Curso de lógica de programção"
-}
+  }
+ ```
+
+Quarta Scripts na coleção course
+ ```
+  {
+    "id": "4",
+    "subjectDescription": "Curso de processos",
+    "startDate": "2020-09-15T00:00:00.000+00:00",
+    "endDate": "2020-09-20T00:00:00.000+00:00",
+    "studentQuantity": 50,
+    "category": {
+      "id": "4",
+      "description": "Processos"
+    }
+  }
  ```

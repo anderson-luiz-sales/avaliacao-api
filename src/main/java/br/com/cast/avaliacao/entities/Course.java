@@ -15,7 +15,7 @@ public class Course implements Serializable {
     private Date endDate;
     private Integer studentQuantity;
 
-    private List<Category> category;
+    private Category category;
 
 
 

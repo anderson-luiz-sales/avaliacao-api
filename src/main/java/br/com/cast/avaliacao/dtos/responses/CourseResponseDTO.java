@@ -1,11 +1,9 @@
 package br.com.cast.avaliacao.dtos.responses;
 
-import br.com.cast.avaliacao.dtos.responses.CategoryResponseDTO;
 import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 @Data
 public class CourseResponseDTO implements Serializable {
@@ -16,5 +14,5 @@ public class CourseResponseDTO implements Serializable {
     private Date endDate;
     private Integer studentQuantity;
 
-    private List<CategoryResponseDTO> category;
+    private CategoryResponseDTO category;
 }

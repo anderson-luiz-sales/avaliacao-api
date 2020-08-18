@@ -85,7 +85,7 @@ public class CourseServiceImplTest {
         Course course = new Course();
 
         course.setId(ID);
-        course.setSubjectDescription(SUBJECT_DESCRIPTION);
+//        course.setSubjectDescription(SUBJECT_DESCRIPTION);
         course.setStartDate(START_DATE);
         course.setEndDate(END_DATE);
         course.setStudentQuantity(STUDENT_QUANTITY);
@@ -112,12 +112,12 @@ public class CourseServiceImplTest {
         return courseList;
     }
 
-    private List<Category> createListCategory() {
+    private Category createListCategory() {
         Category category = createCategory();
 
-        List<Category> categoryList = new ArrayList<>();
-        categoryList.add(category);
+        category.setId(CATEGORY_ID);
+        category.setDescription(DESCRIPTION);
 
-        return categoryList;
+        return category;
     }
 }

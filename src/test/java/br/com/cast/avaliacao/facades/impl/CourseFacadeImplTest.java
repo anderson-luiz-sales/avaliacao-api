@@ -44,7 +44,6 @@ public class CourseFacadeImplTest {
     private static final Integer STUDENT_QUANTITY = 4;
     private static final String CATEGORY_ID = "1";
     private static final String DESCRIPTION = "ADS";
-    private static final Category CATEGORY = new Category();
     Date START_DATE = new Date();
     Date END_DATE = new Date();
 
@@ -142,22 +141,22 @@ public class CourseFacadeImplTest {
         return courseList;
     }
 
-    private List<Category> createListCategory() {
+    private Category createListCategory() {
         Category category = createCategory();
 
-        List<Category> categoryList = new ArrayList<>();
-        categoryList.add(category);
+        category.setId(CATEGORY_ID);
+        category.setDescription(DESCRIPTION);
 
-        return categoryList;
+        return category;
     }
 
-    private List<CategoryRequestDTO> createListCategoryRequestDTO() {
+    private CategoryRequestDTO createListCategoryRequestDTO() {
         CategoryRequestDTO categoryRequestDTO = createCategoryResquestDTO();
 
-        List<CategoryRequestDTO> categoryList = new ArrayList<>();
-        categoryList.add(categoryRequestDTO);
+        categoryRequestDTO.setId(CATEGORY_ID);
+        categoryRequestDTO.setDescription(DESCRIPTION);
 
-        return categoryList;
+        return categoryRequestDTO;
     }
 
     private CourseRequestDTO createCourseRequestDTO() {
